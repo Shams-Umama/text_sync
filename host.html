@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rich Text Sync</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Bidirectional Rich Text Sync</h1>
+    <div id="status">🟢 Ready</div>
+
+    <div class="container">
+
+        <div class="frame-box">
+            <h2>Editor A</h2>
+            <iframe id="frameA" src="frameA.html"></iframe>
+        </div>
+
+        <div class="frame-box">
+            <h2>Editor B</h2>
+            <iframe id="frameB" src="frameB.html"></iframe>
+        </div>
+
+    </div>
+
+    <h2>Action Log</h2>
+
+    <div id="log"></div>
+
+    <script src="host.js"></script>
+
+</body>
+</html>

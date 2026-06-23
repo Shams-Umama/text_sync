@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor A</title>
+
+    <style>
+        body{
+    font-family: 'Segoe UI', sans-serif;
+    margin: 10px;
+    background: #FFFFFF;
+}
+
+.toolbar{
+    margin-bottom: 30px;
+}
+
+button{
+    padding: 10px 18px;
+    min-width: 80px;
+    border: none;
+    border-radius: 8px;
+    background: #D9D0BF;
+    color: #1C1F19;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+button:hover{
+    background: #1A8167;
+    color: white;
+}
+
+button.active{
+    background: #1A8167;
+    color: white;
+}
+#editor{
+    min-height: 250px;
+    padding: 15px;
+    margin-top: 15px;
+    border: 2px solid #D9D0BF;
+    border-radius: 10px;
+    outline: none;
+    font-size: 18px;
+    background: #FFF;
+}
+
+#editor:focus{
+    border-color: #1A8167;
+}
+    </style>
+</head>
+<body>
+
+   <button id="boldBtn">Bold</button>
+<button id="italicBtn">Italic</button>
+<button id="strikeBtn">Strike</button>
+
+   <div id="editor" contenteditable="true"></div>
+
+    <script src="frameA.js"></script>
+
+</body>
+</html>
